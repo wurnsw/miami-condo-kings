@@ -1,0 +1,13 @@
+@import "utils/variables";
+
+@mixin onMobile {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
