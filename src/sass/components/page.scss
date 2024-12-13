@@ -1,27 +1,7 @@
 .page {
   font-family: Roboto, Oxygen, sans-serif;
 
-  &__title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: -1.5px;
-
-    @include onDesktop {
-      font-size: 48px;
-      line-height: 48px;
-    }
-
-    &::after {
-      content: "";
-
-      display: block;
-
-      background-image: url("../images/icon-title.svg");
-
-      @include backgroundImage;
-    }
-  }
+  scroll-behavior: smooth;
 
   &__menu {
     position: fixed;
@@ -35,6 +15,42 @@
 
     &:target {
       transform: translateX(0);
+    }
+  }
+
+  &__section {
+    margin-bottom: 64px;
+
+    @include onDesktop {
+      margin-bottom: 104px;
+    }
+  }
+
+  &__section-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+    text-align: center;
+
+    @include onDesktop {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &::after {
+      margin: 0 auto;
+
+      content: "";
+
+      width: 24px;
+      height: 24px;
+
+      display: block;
+
+      background-image: url("../images/icon-title.svg");
+
+      @include backgroundImage;
     }
   }
 }
