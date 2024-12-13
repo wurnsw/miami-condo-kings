@@ -2,8 +2,8 @@
   background-image: url("../images/bg-header.webp");
   @include backgroundImage;
 
-  @include bgPixelRatio-2x;
-  @include bgPixelRatio-3x;
+  @include bg-PixelRatio-2x;
+  @include bg-PixelRatio-3x;
 
   &__content {
     padding: $headerTopPadding 0 80px;

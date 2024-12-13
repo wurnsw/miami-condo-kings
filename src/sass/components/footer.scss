@@ -1,0 +1,21 @@
+.footer {
+  padding-bottom: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  height: 205px;
+
+  background-image: url("../images/bg-footer.webp");
+  @include backgroundImage;
+
+  @include bg-footer-PixelRatio-2x;
+  @include bg-footer-PixelRatio-3x;
+
+  @include onDesktop {
+    padding-bottom: 32px;
+
+    height: 360px;
+  }
+}
