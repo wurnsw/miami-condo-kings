@@ -28,4 +28,141 @@ a {
   color: inherit;
 }
 
+.page {
+  font-family: Roboto, Oxygen, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1020px;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+.header {
+  background-image: url("/bg-header.ce151cde.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background-image: url("/bg-header@2x.b09b2671.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .header {
+    background-image: url("/bg-header@3x.16ff6047.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.header__content {
+  padding: 24px 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: white;
+}
+.header__title::before {
+  margin-bottom: 24px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: white;
+}
+@media screen and (min-width: 1024px) {
+  .header__title {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -1.5px;
+  }
+}
+
+.logo__image {
+  width: 82px;
+  height: 48px;
+}
+@media screen and (min-width: 1024px) {
+  .logo__image {
+    width: 130px;
+    height: 75px;
+  }
+}
+
+.icon {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 1024px) {
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+.icon__tooltip {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 16px;
+  display: none;
+  width: max-content;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms;
+}
+@media screen and (min-width: 1024px) {
+  .icon__tooltip {
+    display: block;
+  }
+}
+.icon:hover .icon__tooltip {
+  opacity: 1;
+  pointer-events: all;
+}
+.icon--menu {
+  background-image: url("/icon-menu.55d43bc7.svg");
+  transition: background-image 250ms;
+}
+@media screen and (min-width: 1024px) {
+  .icon--menu:hover {
+    background-image: url("/icon-menu-hover.6dc2c409.svg");
+  }
+}
+.icon--call {
+  background-image: url("/icon-call.853b9884.svg");
+}
+
 /*# sourceMappingURL=/main.07544d9b.css.map */
