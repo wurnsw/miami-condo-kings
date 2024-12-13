@@ -6,7 +6,7 @@
   @include bgPixelRatio-3x;
 
   &__content {
-    padding: 24px 0 80px;
+    padding: $headerTopPadding 0 80px;
 
     display: flex;
     flex-direction: column;
@@ -16,9 +16,7 @@
   }
 
   &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include topActions;
   }
 
   &__title {

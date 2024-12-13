@@ -1,0 +1,66 @@
+.menu {
+  background-color: $color-blue;
+
+  &__content {
+    padding: $headerTopPadding 0;
+
+    height: 100vh;
+  }
+
+  &__top {
+    margin-bottom: 48px;
+
+    @include topActions;
+  }
+
+  &__list {
+    margin-bottom: 48px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__link {
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: $color-white;
+
+    transition: border-color 250ms;
+
+    &:hover {
+      border-color: $color-white;
+    }
+  }
+
+  &__call {
+    display: block;
+
+    width: max-content;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: $color-white;
+
+    &--phone {
+      margin-bottom: 16px;
+    }
+
+    &--action {
+      padding-bottom: 8px;
+
+      border-bottom: 1px solid $color-white;
+    }
+  }
+}

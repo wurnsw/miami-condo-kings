@@ -2,16 +2,11 @@
   position: relative;
 
   display: block;
+  width: 100%;
 
-  width: 24px;
-  height: 24px;
+  padding-bottom: 100%;
 
   @include backgroundImage;
-
-  @include onDesktop {
-    width: 32px;
-    height: 32px;
-  }
 
   &__tooltip {
     position: absolute;
@@ -61,5 +56,9 @@
 
   &--call {
     background-image: url("../images/icon-call.svg");
+  }
+
+  &--close {
+    background-image: url("../images/icon-close.svg");
   }
 }

@@ -10,7 +10,7 @@
     <header class="header" id="home">
       <div class="container">
         <div class="header__content">
-          <div class="header__top top">
+          <div class="header__top">
             <a class="icon icon--menu" href="#menu"></a>
             <a class="logo" href="#home">
               <img
@@ -36,6 +36,17 @@
     <nav class="page__menu menu" id="menu">
       <div class="container">
         <div class="menu__content">
+          <div class="menu__top">
+            <a class="icon icon--close" href="#home"></a>
+            <a class="logo" href="#home">
+              <img
+                class="logo__image"
+                src="./images/logo.png"
+                alt="Miami Condo Kings"
+              />
+            </a>
+          </div>
+          
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#home"> Home</a>
@@ -54,8 +65,12 @@
             </li>
           </ul>
 
-          <a class="menu__call" href="tel:+12345555555"> +1 234 555-55-55 </a>
-          <a class="menu__call" href="tel:+1234555-5555"> call to order </a>
+          <a class="menu__call menu__call--phone" href="tel:+12345555555">
+            +1 234 555-55-55
+          </a>
+          <a class="menu__call menu__call--action" href="tel:+1234555-5555">
+            call to order
+          </a>
         </div>
       </div>
     </nav>
