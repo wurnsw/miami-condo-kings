@@ -16,8 +16,7 @@
   &__list {
     margin-bottom: 48px;
 
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     gap: 24px;
   }
 

@@ -8,8 +8,7 @@
   &__content {
     padding: $headerTopPadding 0 80px;
 
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     justify-content: space-between;
 
     height: 100vh;

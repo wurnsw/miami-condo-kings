@@ -1,6 +1,5 @@
 .person {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
   align-items: center;
 
   width: 280px;
@@ -22,8 +21,7 @@
   }
 
   &__info {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     align-items: center;
   }
 

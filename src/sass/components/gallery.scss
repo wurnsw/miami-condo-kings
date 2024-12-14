@@ -1,14 +1,12 @@
 .gallery {
   &__content {
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     align-items: center;
   }
   &__list {
     margin-bottom: 32px;
 
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     gap: 32px;
 
     @include onDesktop {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="page">
   <head>
-    <meta cha="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/main.scss" />
     <title>MIAMI</title>
@@ -85,7 +85,7 @@
               Real estate
               <a class="about__title-link" href="#">here</a>
             </h2>
-            <article class="about__description">
+            <div class="about__description">
               <a class="about__subtitle" href="#">
                 Over 50 years experience in love.
               </a>
@@ -110,7 +110,7 @@
                 <br />
                 Guaranteed secure transaction - 100%
               </p>
-            </article>
+            </div>
           </div>
         </div>
       </section>
@@ -310,7 +310,8 @@
       <section class="page__section contacts" id="contacts">
         <div class="container">
           <h2 class="page__section-title">Contact us</h2>
-          <address class="contacts__block">
+
+          <div class="contacts__content">
             <ul class="contacts__list">
               <li class="contacts__item">
                 Phone
@@ -330,31 +331,39 @@
                   class="contacts__link"
                   target="blank"
                   href="https://maps.app.goo.gl/EeY18VYVfovnNv7c9"
-                  >400 first ave. n. suite 700 Minneapolis, MN 55401</a
+                >
+                  400 first ave. n.
+                  <br />
+                  suite 700
+                  <br />
+                  Minneapolis, MN 55401</a
                 >
               </li>
             </ul>
-          </address>
-          <form class="contacts__form form" action="#">
-            <input
-              class="form__input"
-              placeholder="Name"
-              name="name"
-              type="text"
-            />
-            <input
-              class="form__input"
-              placeholder="Email"
-              name="email"
-              type="email"
-            />
-            <textarea
-              class="form__input"
-              placeholder="Massage"
-              name="massage"
-            ></textarea>
-            <button class="form__button" type="button">Consultation</button>
-          </form>
+
+            <form class="contacts__form form" action="#">
+              <input
+                class="form__field"
+                placeholder="Name"
+                name="name"
+                type="text"
+              />
+              <input
+                class="form__field"
+                placeholder="Email"
+                name="email"
+                type="email"
+              />
+              <textarea
+                class="form__field form__field--textarea"
+                placeholder="Massage"
+                name="massage"
+              ></textarea>
+              <button class="button button--primary" type="button">
+                Consultation
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

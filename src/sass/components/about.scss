@@ -1,6 +1,8 @@
 .about {
   &__content {
-    @include grid;
+    @include onDesktop {
+      @include flexBetween;
+    }
   }
 
   &__title {
@@ -11,7 +13,7 @@
     @include onDesktop {
       margin-bottom: 0;
 
-      grid-column: 1 / 5;
+      width: 324px;
     }
   }
 
@@ -20,13 +22,13 @@
   }
 
   &__description {
-    grid-column: 7 / 13;
+    @include onDesktop {
+      width: 498px;
+    }
   }
 
   &__subtitle {
     margin-bottom: 16px;
-
-    display: block;
 
     @include blueTypography;
   }
