@@ -29,8 +29,10 @@
     color: $color-white;
 
     opacity: 0;
+
     pointer-events: none;
-    transition: opacity 250ms;
+
+    transition: opacity $transition-duration;
 
     @include onDesktop {
       display: block;
@@ -45,7 +47,7 @@
   &--menu {
     background-image: url("../images/icon-menu.svg");
 
-    transition: background-image 250ms;
+    transition: background-image $transition-duration;
 
     @include onDesktop {
       &:hover {

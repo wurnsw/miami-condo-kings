@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="page">
   <head>
-    <meta charset="UTF-8" />
+    <meta cha="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/main.scss" />
     <title>MIAMI</title>
@@ -115,122 +115,128 @@
         </div>
       </section>
 
-      <section class="page__section gallery" id="gallery" hidden>
+      <section class="page__section gallery" id="gallery">
         <div class="container">
           <h2 class="page__section-title">Gallery</h2>
-
-          <ul class="gallery__list">
-            <li class="gallery__item">
-              <figure class="gallery__place place">
-                <div class="place__image-container">
-                  <img
-                    class="place__image"
-                    srcset="
-                      ./images/gallery-1-672.webp  1x,
-                      ./images/gallery-1-1344.webp 2x,
-                      ./images/gallery-1-2016.webp 3x
-                    "
-                    src="./images/gallery-1-672.webp"
-                    alt="Marina Palms"
-                  />
-                  <img
-                    class="place__image"
-                    srcset="
-                      ./images/gallery-2-324.webp 1x,
-                      ./images/gallery-2-648.webp 2x,
-                      ./images/gallery-2-972.webp 3x
-                    "
-                    src="./images/gallery-2-324.webp"
-                    alt="Marina Palms"
-                  />
+          <div class="gallery__content">
+            <ul class="gallery__list">
+              <li class="gallery__item place">
+                <div class="place__images">
+                  <div class="place__image-container">
+                    <img
+                      class="place__image"
+                      srcset="
+                        ./images/gallery-1-672.webp  1x,
+                        ./images/gallery-1-1344.webp 2x,
+                        ./images/gallery-1-2016.webp 3x
+                      "
+                      src="./images/gallery-1-672.webp"
+                      alt="Marina Palms"
+                    />
+                  </div>
+                  <div class="place__image-container">
+                    <img
+                      class="place__image"
+                      srcset="
+                        ./images/gallery-2-324.webp 1x,
+                        ./images/gallery-2-648.webp 2x,
+                        ./images/gallery-2-972.webp 3x
+                      "
+                      src="./images/gallery-2-324.webp"
+                      alt="Marina Palms"
+                    />
+                  </div>
                 </div>
-                <figcaption class="place__info">
+                <div class="place__description">
                   <a
+                    class="place__link"
                     href="https://maps.app.goo.gl/1CQNtZYejtF2ejWn8?g_st=com.google.maps.preview.copy"
-                    target="_blank"
-                    class="place__address"
+                    target="blank"
                   >
                     Marina Palms
                   </a>
                   / North Miami Beach, FL 33162
-                </figcaption>
-              </figure>
-            </li>
-
-            <li class="gallery__item">
-              <figure class="gallery__place place">
-                <div class="place__image-container">
-                  <img
-                    class="place__image"
-                    srcset="
-                      ./images/gallery-3-498.webp  1x,
-                      ./images/gallery-3-996.webp  2x,
-                      ./images/gallery-3-1494.webp 3x
-                    "
-                    src="./images/gallery-3-498.webp"
-                    alt="Edition Residens"
-                  />
-                  <img
-                    class="place__image"
-                    srcset="
-                      ./images/gallery-4-498.webp  1x,
-                      ./images/gallery-4-996.webp  2x,
-                      ./images/gallery-4-1494.webp 3x
-                    "
-                    src="./images/gallery-4-498.webp"
-                    alt="Edition Residens"
-                  />
                 </div>
-                <figcaption class="place__info">
+              </li>
+              <li class="gallery__item place">
+                <div class="place__images">
+                  <div class="place__image-container">
+                    <img
+                      class="place__image"
+                      srcset="
+                        ./images/gallery-3-498.webp  1x,
+                        ./images/gallery-3-996.webp  2x,
+                        ./images/gallery-3-1494.webp 3x
+                      "
+                      src="./images/gallery-3-498.webp"
+                      alt="Edition Residens"
+                    />
+                  </div>
+                  <div class="place__image-container">
+                    <img
+                      class="place__image"
+                      srcset="
+                        ./images/gallery-4-498.webp  1x,
+                        ./images/gallery-4-996.webp  2x,
+                        ./images/gallery-4-1494.webp 3x
+                      "
+                      src="./images/gallery-4-498.webp"
+                      alt="Edition Residens"
+                    />
+                  </div>
+                </div>
+                <div class="place__description">
                   <a
+                    class="place__link"
                     href="https://maps.app.goo.gl/CBHe4xhSAGzwh8Lc6?g_st=com.google.maps.preview.copy"
-                    target="_blank"
-                    class="place__address"
+                    target="blank"
                   >
                     Edition Residens
                   </a>
                   / Miami Beach, FL 33139
-                </figcaption>
-              </figure>
-            </li>
-            <li class="gallery__item">
-              <figure class="gallery__place place">
-                <div class="place__image-container">
-                  <img
-                    class="place__image"
-                    srcset="
-                      ./images/gallery-5-324.webp 1x,
-                      ./images/gallery-5-648.webp 2x,
-                      ./images/gallery-5-972.webp 3x
-                    "
-                    src="./images/gallery-5-324.webp"
-                    alt="Faena House "
-                  />
-                  <img
-                    class="place__image"
-                    srcset="
-                      ./images/gallery-6-672.webp  1x,
-                      ./images/gallery-6-1344.webp 2x,
-                      ./images/gallery-6-2016.webp 3x
-                    "
-                    src="./images/gallery-6-672.webp"
-                    alt="Faena House "
-                  />
                 </div>
-                <figcaption class="place__info">
+              </li>
+              <li class="gallery__item place">
+                <div class="place__images">
+                  <div class="place__image-container">
+                    <img
+                      class="place__image"
+                      srcset="
+                        ./images/gallery-5-324.webp 1x,
+                        ./images/gallery-5-648.webp 2x,
+                        ./images/gallery-5-972.webp 3x
+                      "
+                      src="./images/gallery-5-324.webp"
+                      alt="Faena House "
+                    />
+                  </div>
+                  <div class="place__image-container">
+                    <img
+                      class="place__image"
+                      srcset="
+                        ./images/gallery-6-672.webp  1x,
+                        ./images/gallery-6-1344.webp 2x,
+                        ./images/gallery-6-2016.webp 3x
+                      "
+                      src="./images/gallery-6-672.webp"
+                      alt="Faena House "
+                    />
+                  </div>
+                </div>
+                <div class="place__description">
                   <a
+                    class="place__link"
                     href="https://maps.app.goo.gl/BUAUSJuZAG6zqQsh6?g_st=com.google.maps.preview.copy"
-                    target="_blank"
-                    class="place__address"
+                    target="blank"
                   >
                     Faena House
                   </a>
                   / Miami Beach,FL 33140
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-          <button type="button" class="gallery__button">View all</button>
+                </div>
+              </li>
+            </ul>
+            <button class="button" type="button">View all</button>
+          </div>
         </div>
       </section>
 
@@ -322,7 +328,7 @@
                 Address
                 <a
                   class="contacts__link"
-                  target="_blank"
+                  target="blank"
                   href="https://maps.app.goo.gl/EeY18VYVfovnNv7c9"
                   >400 first ave. n. suite 700 Minneapolis, MN 55401</a
                 >

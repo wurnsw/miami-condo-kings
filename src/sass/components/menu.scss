@@ -23,7 +23,6 @@
 
   &__link {
     padding-bottom: 8px;
-    border-bottom: 1px solid transparent;
 
     font-size: 22px;
     font-weight: 700;
@@ -33,7 +32,9 @@
 
     color: $color-white;
 
-    transition: border-color 250ms;
+    border-bottom: 1px solid transparent;
+
+    transition: border-color $transition-duration;
 
     &:hover {
       border-color: $color-white;

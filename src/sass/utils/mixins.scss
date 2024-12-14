@@ -76,3 +76,37 @@
     grid-template-columns: $icon-width 1fr $icon-width;
   }
 }
+
+@mixin grid {
+  @include onDesktop {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+  }
+}
+
+@mixin titleTypography {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1.5px;
+
+  @include onDesktop {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+@mixin blueTypography {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+
+  color: $color-blue;
+}
+
+@mixin greyTypography {
+  font-size: 14px;
+
+  color: #9fadc2;
+}
